@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ['...', 'php83'] # Asegúrate de poner la versión de PHP que uses
+
+[phases.build]
+cmds = ['composer install --no-dev --optimize-autoloader', 'php artisan optimize:clear']
+
+[phases.deploy]
+cmds = ['php artisan migrate --force', 'php artisan serve --host 0.0.0.0 --port ${PORT}']
