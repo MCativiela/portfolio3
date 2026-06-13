@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['...', 'php83'] # Asegúrate de poner la versión de PHP que uses
+nixPkgs = ['...', 'php84']          # Asegúrate de poner la versión de PHP que uses
 
 [phases.build]
 cmds = ['composer install --no-dev --optimize-autoloader', 'php artisan optimize:clear']

@@ -9,7 +9,6 @@ class InteresesController extends Controller
 {
     public function index()
     {
-        $intereses = Intereses::orderBy('orden', 'asc')->get();
-        return response()->json($intereses);
+        return response()->json(Intereses::orderBy('orden', 'asc')->get());
     }
 }
