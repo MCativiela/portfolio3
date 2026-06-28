@@ -3,7 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "npm rebuild && vite build"
+        "build": "vite build"
     },
     "dependencies": {
         "vite": "^8.0.0"
